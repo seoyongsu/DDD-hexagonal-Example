@@ -10,14 +10,22 @@ import java.util.Optional;
 
 @Repository
 public class OrderRepositoryAdapter implements OrderCommandRepository, OrderQueryRepository {
+    private final OrderTableRepository orderTableRepository;
+
+    public OrderRepositoryAdapter(OrderTableRepository orderTableRepository) {
+        this.orderTableRepository = orderTableRepository;
+    }
 
     @Override
     public Order save(Order order) {
-        return null;
+        OrderTable orderTable = orderTableRepository.save(OrderTableAccessMapper.toTable(order));
+
+        return OrderTableAccessMapper.toEntity(orderTable);
     }
 
     @Override
     public Optional<Order> findById(OrderNo orderNo) {
-        return Optional.empty();
+        return orderTableRepository.findById(orderNo.getNo())
+                .map(OrderTableAccessMapper::toEntity);
     }
 }
