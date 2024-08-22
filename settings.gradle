@@ -1,1 +1,6 @@
-rootProject.name = 'DDD-Hexagonal-example'
+rootProject.name = 'order-service'
+include 'common'
+include 'order-domain'
+include 'order-application'
+include 'order-dataaccess'
+
