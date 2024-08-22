@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    database: h2
+    hibernate:
+      ddl-auto: create-drop
+    #open-in-view: false
+    show-sql: true
+    properties:
+      dialect: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+    #url: jdbc:mysql://localhost:3306/farmonitor?useSSL=false&serverTimezone=UTC&zeroDateTimeBehavior=convertToNull
+    #username: root
+    #password: 1234
