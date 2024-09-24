@@ -13,8 +13,12 @@ dependencies {
     implementation project(":common")
     implementation project(":order-application")
     implementation project(":order-domain")
-    implementation group: 'com.google.code.gson', name: 'gson', version: '2.11.0'
-    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations'
+    implementation 'com.fasterxml.jackson.core:jackson-core'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
 }
 
 test {

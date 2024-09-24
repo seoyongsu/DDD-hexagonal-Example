@@ -3,5 +3,6 @@ include 'common'
 include 'order-domain'
 include 'order-application'
 include 'order-dataaccess'
+include 'order-interfaces'
 include 'order-message'
 
