@@ -5,4 +5,5 @@ include 'order-application'
 include 'order-dataaccess'
 include 'order-interfaces'
 include 'order-message'
+include 'order-container'
 
