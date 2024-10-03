@@ -10,3 +10,6 @@ dependencies {
     // Spring 트랜젝션 의존성
     implementation 'org.springframework:spring-tx'
 }
+bootJar {
+    enabled=false
+}

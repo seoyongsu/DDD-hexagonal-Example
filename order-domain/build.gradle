@@ -8,3 +8,7 @@ repositories {
 dependencies {
     implementation project(":common")
 }
+
+bootJar {
+    enabled=false
+}
