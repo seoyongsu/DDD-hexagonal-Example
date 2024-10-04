@@ -1,8 +1,8 @@
-package org.example.hexagonalexample.domain.order.event;
+package org.example.order.domain.event;
 
 
-import org.example.hexagonalexample.domain.core.Event;
-import org.example.hexagonalexample.domain.order.entity.Order;
+import org.example.order.domain.Event;
+import org.example.order.domain.entity.Order;
 
 import java.time.Instant;
 

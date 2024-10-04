@@ -1,0 +1,14 @@
+
+group = 'org.example.order'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":common")
+}
+
+bootJar {
+    enabled=false
+}

@@ -1,0 +1,15 @@
+group = 'org.example.order'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":common")
+    implementation project(":order-domain")
+    // Spring 트랜젝션 의존성
+    implementation 'org.springframework:spring-tx'
+}
+bootJar {
+    enabled=false
+}

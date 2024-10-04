@@ -1,9 +1,9 @@
-package org.example.hexagonalexample.domain.order;
+package org.example.order.domain;
 
-import org.example.hexagonalexample.domain.order.entity.Order;
-import org.example.hexagonalexample.domain.order.event.OrderCanceledEvent;
-import org.example.hexagonalexample.domain.order.event.OrderCreateEvent;
-import org.example.hexagonalexample.domain.order.event.OrderPaidEvent;
+import org.example.order.domain.entity.Order;
+import org.example.order.domain.event.OrderCanceledEvent;
+import org.example.order.domain.event.OrderCreateEvent;
+import org.example.order.domain.event.OrderPaidEvent;
 
 /**
  * 도메인 서비스
