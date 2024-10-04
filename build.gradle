@@ -32,9 +32,13 @@ subprojects {
     test {
         useJUnitPlatform()
     }
+
 }
 
-springBoot {
-    mainClass = 'org.example.order.OrderServiceApplication'
+bootJar {
+    enabled = false
 }
 
+jar {
+    enabled = true
+}
